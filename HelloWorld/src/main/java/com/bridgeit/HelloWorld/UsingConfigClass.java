@@ -10,7 +10,7 @@ import com.bridgeit.HelloWorld.domain.HelloWorld;
  * @author Om Prajapati
  *
  */
-public class App {
+public class UsingConfigClass {
 
 	public static void main(String[] args) {
 
