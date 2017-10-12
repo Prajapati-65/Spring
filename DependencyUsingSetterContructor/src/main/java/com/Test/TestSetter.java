@@ -1,4 +1,4 @@
-package com.bridgeit.UsingPropertySetter;
+package com.Test;
 
 import org.springframework.context.support.AbstractApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
@@ -9,7 +9,7 @@ public class TestSetter {
 
 	public static void main(String[] args) {
 		
-		AbstractApplicationContext context = new ClassPathXmlApplicationContext("messageSetter-config.xml");
+		AbstractApplicationContext context = new ClassPathXmlApplicationContext("setter-config.xml");
 		Communication app = (Communication) context.getBean("communication");
 		app.communicate();
 	}

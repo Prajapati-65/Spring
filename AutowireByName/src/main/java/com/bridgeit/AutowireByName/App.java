@@ -11,6 +11,7 @@ public class App
     	 
         //autowire=byName 
         Application application = (Application)context.getBean("appli");
+        
         System.out.println("Application Details : "+application);
     }
 }

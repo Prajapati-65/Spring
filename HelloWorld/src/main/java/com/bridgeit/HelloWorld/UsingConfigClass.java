@@ -15,7 +15,7 @@ public class UsingConfigClass {
 	public static void main(String[] args) {
 
 		AbstractApplicationContext context = new AnnotationConfigApplicationContext(HelloWorldConfig.class);
-		HelloWorld bean = (HelloWorld) context.getBean("helloBean");
+		HelloWorld bean = (HelloWorld) context.getBean("hiBean");
 		bean.displayName("Om Prajapati");
 		context.close();
 	}

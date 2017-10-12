@@ -1,4 +1,4 @@
-package com.bridgeit.UsingPropertySetter;
+package com.Test;
 
 import org.springframework.context.support.AbstractApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;

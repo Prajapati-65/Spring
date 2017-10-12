@@ -4,12 +4,20 @@
     xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
                             http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.0.xsd">
  
-    <!-- byName example -->
-    <bean id="appli" class="com.bridgeit.AutowireByName.Application" autowire="byName"/>
- 
-    <bean id="applicationUser" class="com.bridgeit.AutowireByName.ApplicationUser" >
-        <property name="name" value="Om Prajapati" />
+    <!-- default example (autowire="no") -->
+    <bean id="country" class="com.bridgeit.AutowireNo.Country" autowire="no">
+    
+        <property name="city" ref="abc"/>
+        
     </bean>
  
+    <bean id="abc" class="com.bridgeit.AutowireNo.City" >
+    
+        <property name="cityName" value="Bangalore"/>
+        <property name="stateName" value="KA"/>
+        <property name="noOfCity" value="10"/>
+        
+    </bean>
  
 </beans>
+

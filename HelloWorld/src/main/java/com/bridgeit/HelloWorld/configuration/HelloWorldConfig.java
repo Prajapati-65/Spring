@@ -10,7 +10,7 @@ import com.bridgeit.HelloWorld.domain.HelloWorldImpliment;
 @Configuration
 public class HelloWorldConfig {
 
-	@Bean(name="helloBean")
+	@Bean(name="hiBean")
     @Description("This is a sample HelloWorld Bean")
     public HelloWorld helloWorld() {
         return new HelloWorldImpliment();

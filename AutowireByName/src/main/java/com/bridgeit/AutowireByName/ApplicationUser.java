@@ -14,6 +14,6 @@ public class ApplicationUser {
 
 	@Override
 	public String toString() {
-		return "ApplicationUser [ name= " + name + " ]";
+		return "ApplicationUser [ name = " + name + " ]";
 	}
 }
