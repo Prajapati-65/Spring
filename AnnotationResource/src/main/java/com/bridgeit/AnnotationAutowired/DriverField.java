@@ -1,0 +1,24 @@
+package com.bridgeit.AnnotationAutowired;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+@Component("driver")
+public class DriverField {
+
+	@Autowired
+    private License license;
+ 
+    public License getLicense() {
+		return license;
+	}
+
+	public void setLicense(License license) {
+		this.license = license;
+	}
+
+	@Override
+    public String toString() {
+        return "Driver [license=" + license + "]";
+    }
+}
